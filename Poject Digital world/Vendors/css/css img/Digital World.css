@@ -1,0 +1,436 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: white;
+    color: black;
+    /* font-size: 20px; */
+}
+ /* Header nav-bar section ------------------------------------------------------------------------*/
+nav{
+    display:flex;
+}
+ .logo img{
+     height: 60px;
+     width: 60px;
+    
+ }
+ .nav-bar{
+     color: white;
+     float: right;
+     display:flex;
+     position: absolute;
+     left: 1000px;
+ }
+ .nav-bar li{
+    color: white;
+     cursor: pointer;
+     display: inline-block;
+     margin: 20px 20px 20px 20px;
+} 
+ .nav-bar li:hover{
+     cursor: pointer;
+     color: white;
+     display: inline-block;
+     margin: 20px 20px;
+     border-bottom: 3px solid rgb(255, 7, 152);
+ }
+
+/* .............Header section....................................................................*/
+header{ 
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3) , rgb(0, 0, 0, 0.7)),url("Header.jpeg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.Header-box{
+    position:absolute;
+    top: 40%;
+    left: 35%;
+    text-align: center;
+}
+h1{
+    color: white;
+    font-size: 500%;
+    font-weight: 350%;
+    font-family: calibri, sans-serif;
+}
+h2{
+    color: white;
+    font-size: 200%;
+    font-weight: 250%;
+    font-family: calibri, sans-serif;
+    margin-bottom: 35px;
+}
+.btn{
+    text-decoration: none;
+    padding: 10px 10px;
+}
+.btn-full{
+    margin-top: 20px;
+    font-size: 120%;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 7, 152);
+    font-family: calibri, sans-serif;
+    border-radius: 25px;
+}
+.btn:hover, .btn:active{
+    background-color: rgb(190, 13, 117);
+}
+
+/* ------------------------------------------About Section-------------------------------------- */
+#Abouts{
+    margin: 100px;
+}
+#Abouts img{
+    margin-top: 30px;
+    height: 40%;
+    width: 40%;
+    border-radius: 30px;
+    float: right;
+}
+#Abouts .About{
+    height: 40%;
+    width: 40%;
+    display: inline-block;
+}
+#Abouts h2{
+    margin-top: 20px;
+    color: black;
+    font-weight: 200%;
+    font-family: sans-serif;
+}
+#Abouts p{
+    margin-bottom: 30px;
+    font-size: 18px;
+
+}
+#Abouts .btn{
+    color: rgb(255, 7, 152);
+    background-color: white;
+    border: 3px solid rgb(255, 7, 152);
+     border-radius: 20px;
+     font-family: sans-serif;
+     font-weight: bold;
+}
+#Abouts .btn:hover{
+    color: white;
+    background-color:rgb(255, 7, 152);
+    border: 3px solid rgb(255, 7, 152);
+     border-radius: 20px;
+     font-family: sans-serif;
+     font-weight: bold;
+}
+/* ------------------------------------------Portfolio Section-------------------------------------- */
+#Portfolio{
+    background-color: rgb(218, 213, 213);
+    margin: 40px 0px;
+}
+.images{
+    display: flex;
+}
+#Portfolio h2{
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#Portfolio h3{
+    margin-bottom: 20px, 10px;
+}
+#Portfolio p{
+    color: rgb(99, 95, 95);
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#Portfolio p:after{
+    display: block;
+    content: "";
+    background-color: rgb(255, 7, 152); 
+    width: 100px;
+    height: 3px;
+    margin: 30px auto 0px auto;
+}
+#Portfolio figure img{
+     height: 80%;
+     width: 100%;
+     margin: 20px 0px 0px 0px;
+     border-radius: 20px;
+     opacity: .90;
+     transform: scale(.95);
+     transition: transform 0.5s;;
+ }
+#Portfolio figure img:hover{
+     height: 80%;
+     width: 100%;
+     margin: 20px 0px 0px 0px;
+     border-radius: 20px;
+     opacity: 1;
+     transform: scale(1);
+ }
+
+ /* <!--------------------------------------work Section----------------------------------------> */
+ .Sub-heading{
+     color: black;
+     text-align: center;
+     font-family: sans-serif;
+ }
+  .work-pera{
+     text-align: center;
+     font-family: sans-serif;
+     font-weight: bold;
+ }
+ .work-pera::after{
+    content:"";
+    display: block;
+    background-color: rgb(255, 7, 152); 
+    width: 100px;
+    height: 3px;
+    margin: 30px auto 30px auto;
+
+}
+.All-work{
+    display: flex;
+    margin: 20px 0px 20px 90px;
+}
+.work-sec img{
+    height: 20%;
+    width: 30%;
+    }
+.work-sec h3{
+color: black;
+font-family: sans-serif;
+font-weight: bold;
+}
+.work-sec p{
+    line-height: 130%;
+    width: 60%;
+    margin: 20px 0px;
+    font-size: 18px;
+}
+.work-sec a {
+    color:rgb(255, 7, 152); 
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+.work-sec a:hover {
+    color:rgb(214, 4, 127);
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* --------------------------------------------------------------------------------------------------- */
+#f-work{
+    background-color: rgb(218, 213, 213);
+    margin: 40px 0px 0px 0px;
+}
+.featured-work img{
+    height: 10%;
+    width: 10%;
+    margin: 40px 0px 40px 120px;
+}
+/* -------------------------------------------OUR TESTIMONELS---------------------------------------- */
+.testimonels{
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4) , rgb(0, 0, 0, 0.8)),url("pexels-media-6224.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head{
+    margin-top: 0px;
+    text-align: center;
+}
+.tes{
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    margin-left: 150px;
+    
+}
+.apostrophy p{
+    font-size: 50px;
+}
+.Bio{
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    margin: 20px 20px 20px 60px;
+}
+.pic img{
+    height:70px;
+    width: 70px;
+    border-radius: 45px;
+    margin: 20px 0px 10px 185px;
+}
+.pic p{
+    margin: 0px 0px 20px 190px;
+}
+/* -----------------------------------------------------Pakges---------------------------------------------- */
+.Pakages{
+    font-size: 17px;
+    background-color: rgb(202, 201, 201);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.Temp{
+    margin: 50px 0px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px grey;
+}
+#Starter{
+    color: black;
+    margin: 10px 10px;
+
+}
+#pera1{
+    color:rgb(255, 7, 152) ;
+    font-size: 35px;
+}
+#pera1 span{
+    color:rgb(255, 7, 152) ;
+    font-size: 22px;
+}
+#pera2{
+    margin: 20px 0px;
+    border-bottom: 2px solid rgb(175, 171, 171);
+}
+ #List{
+    margin: 20px 0px;
+    list-style: none;
+    border-bottom: 2px solid grey;
+}
+.btn-3{
+    border: 8px solid rgb(255, 7, 152) ;
+    color: white;
+    background-color: rgb(255, 7, 152);
+    display: inline-block;
+    border-radius: 20px;
+    margin: 20px 130px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn-3:hover{
+    border: 8px solid rgb(196, 8, 117) ;
+    color: white;
+    background-color: rgb(196, 8, 117);
+    display: inline-block;
+    border-radius: 20px;
+    margin: 20px 130px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* -------------------------------------------------Area sec----------------------------------------------- */
+.Sub-heading2{
+    color: black;
+    margin-top: 60px;
+    text-align: center;
+}
+.area{
+    text-align: left;
+    margin: 20px 20px 20px 300px;
+    display: grid;
+    grid-template-columns: 300px 500px;
+}
+input{
+    padding: 5px;
+    margin: 10px 0px;
+}
+.same{
+    border: 2px solid grey;
+    width: 400px;
+    border-radius: 3px;
+}
+.ta{
+    height: 100px;
+}
+.btn-4{
+    border: 7px solid rgb(255, 7, 152) ;
+    color: white;
+    background-color: rgb(255, 7, 152);
+    display: inline-block;
+    margin: 0px 600px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn-4:hover{
+    border: 7px solid rgb(196, 8, 117) ;
+    color: white;
+    background-color: rgb(196, 8, 117);
+    display: inline-block;
+    margin: 0px 600px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* =============================================Footer sec=============================================== */
+footer{
+    background-color: rgb(41, 39, 39);
+    height: 400px;
+    margin-top: 20px;
+}
+.grid{
+   
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+/* ===========================================logo setting=============================================== */
+.fa-facebook-square{
+    height: 200px;
+    color: #4267B2;
+
+}
+.fa-twitter{
+    height: 200px;
+    color: #1DA1F2;
+
+}
+.fa-google-plus-g{
+    height: 200px;
+    color: #DB4437;
+
+}
+.fa-instagram{
+    height: 200px;
+    color: #C13584;
+/* ==================================================End================================================== */
+}
+.logo ul ,.grid ul{
+    display: flex;
+    flex-direction: wrap;
+}
+.logo ul li ,.grid ul li{
+    margin: 60px 20px 0px 10px;
+    list-style: none;
+    color: rgb(155, 155, 155);
+    cursor: pointer;
+    /* padding: 20px; */
+}
+.grid ul li:hover{
+    margin: 60px 20px 0px 10px;
+    margin: 60px 20px 0px 10px;
+    list-style: none;
+    color: rgb(247, 247, 247);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.fp,.fp1{
+    text-align: center;
+    color: rgb(155, 155, 155);
+    margin: 0px 0px;
+}
+.fp2{
+    margin-top: 20px;
+}
