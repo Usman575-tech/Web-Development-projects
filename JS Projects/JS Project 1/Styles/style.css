@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#countdown{
+    margin-left: 600px;
+    margin-top: 220px;
+    font-size: 600%;
+    position: absolute;
+}
+div{
+    position: relative;
+}
+#img{
+    height: 643px;
+    width: 100%;
+}

@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    display: none;
+}
+
+header > div{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    background-color: lightblue;
+    text-align: center;
+}
+
+button {
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+#main-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.small {
+    font-size: 24px;
+}
+
+.big {
+    font-size: 48px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        display: block;
+        font-size: 36px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    nav i {
+        cursor: pointer;
+    }
+
+    #sidebar {
+        transition: all 1s;
+        width: 100%;
+        height: 100%;
+        max-width: 270px;
+        background-color: white;
+        position: fixed;
+        left: -270px;
+        top: 72px;
+    }
+
+    #sidebar ul {
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+        padding-top: 32px;
+    }
+
+    #sidebar ul li {
+        padding-left: 0;
+        font-size: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .hide {
+        display: none;
+        transform: translateX(-270px);
+    }
+
+    .show {
+        display: block;
+        transform: translateX(270px);
+    }
+}
+
+
+
+
+
+--------------------------------------------------------------------
+html
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JS - Intro to Events, Event Listeners and Event Handlers</title>
+    <link rel="stylesheet" href="/index.css" type="text/css" >
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35c398e458.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <i id="toggle-icon" class="fas fa-bars"></i>
+            <div id="sidebar" class="hide">
+                <ul>
+                    <li>Home</li>
+                    <li>Settings</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <h1 id="main-heading" class="small">Add/Remove Classes</h1>
+            <button id="btn-click">Click Me!!</button>
+        </div>
+    </header>
+    <script src="/index.js"></script>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------
+js
+
+var mainHeading = document.getElementById("main-heading");
+
+var btn = document.getElementById('btn-click');
+
+var sidebar = document.getElementById('sidebar');
+
+var toggleButton = document.getElementById('toggle-icon');
+
+mainHeading.classList.add('big');
+
+toggleButton.addEventListener('click', function() {
+    if(sidebar.classList.contains('show')) {
+        sidebar.classList.remove('show');
+        sidebar.classList.add('hide');
+    } else {
+        sidebar.classList.add('show');
+        sidebar.classList.remove('hide');
+    }
+});

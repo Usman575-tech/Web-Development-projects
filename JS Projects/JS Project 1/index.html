@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Java Assignment </title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="countdown">10</h1>
+            <img id="img" src="./Assets/pexels-martin-péchy-304664.jpg" alt="">
+        </div>
+
+    </header>
+    <script>
+        var value= document.getElementById('countdown');
+        var invalue = value.innerHTML;
+
+        var img1= document.getElementById('img');
+
+
+
+        setInterval(function() {
+            if (invalue===0) {
+                clearInterval(value);
+            } else {
+                invalue= invalue > 0 ? invalue - 1 : 0;
+                value.innerHTML=invalue;
+            }
+
+            var image1 = invalue % 2 === 0 ? './Assets/pexels-martin-péchy-304664.jpg' : './Assets/pexels-pixabay-220182.jpg';
+            img1.src= image1;
+        }, 1000);
+    </script>
+</body>
+</html>

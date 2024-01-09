@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(3, 3, 3);
+}
+nav{
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+}
+h1{
+    font-family: cursive;
+    font-size: 25px;
+    color: rgb(41, 230, 41);
+}
+header nav a{
+    text-decoration: none;
+    height: 22px;
+    margin-top: 20px;
+    justify-content: center;
+    color: black;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+.container{
+    background-color: rgb(13, 13, 13);
+}
+h2{
+    color: white;
+    text-align: center;
+    font-family:sans-serif;
+}
+table{
+    margin: 0px auto;
+}
+table,
+th,
+td{
+    color: white;
+    border: 2px solid rgb(56, 56, 56);
+    border-collapse: collapse;
+}
+th,td{
+    height: auto;
+    padding: 10px;
+    width: 90px;
+}
+footer{
+    color: white;
+    margin: 7px;
+    text-align: center;
+}

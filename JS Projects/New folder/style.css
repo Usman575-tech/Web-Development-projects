@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(138, 96, 177);
+}
+#head{
+    color: white;
+    background-color: rgb(195, 140, 246);
+    display: flex;
+    justify-content: space-between;
+}
+#SignUp{
+    color: white;
+    font-size: 25px;
+}
+#toggle-icon{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+#sidebar {
+    width: 300px;
+    height: 573px;
+    background-color: rgb(237, 237, 237);
+}
+
+div .active {
+    color: white;
+    background-color: green;
+}
+
+div a {
+    text-align: center;
+    font-size: large;
+    display: block;
+    padding: 20px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+div a:hover:not(.active) {
+    background-color: rgb(196, 196, 196);
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
